@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts-config>
+   <form-beans>
+      <form-bean name="UserForm" type="com.i18n.form.UserForm"/>
+   </form-beans>
+   
+   <action-mappings>
+      <action name="UserForm"
+              type="com.struts.i18n.LanguageSelectAction"
+              path="/LanguageSelectAction">
+            <forward name="success" path="/success.jsp"/>   
+      </action>        
+   </action-mappings>
+   
+   <message-resources parameter="com.util.ApplicationResources"/>
+</struts-config>
